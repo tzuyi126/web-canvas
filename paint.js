@@ -3,7 +3,7 @@ var m, c; //繪圖物件
 function init() {
     m = document.getElementById("m"); //取得畫布物件參考
     c = m.getContext("2d"); //建立2d繪圖物件
-    Radio5.checked = "checked";
+    brush1.checked = "checked";
 }
 function md() {
     c.moveTo(event.offsetX, event.offsetY); //起點
@@ -20,8 +20,8 @@ function mup() {
     draw = false; //離開繪圖模式
     c.closePath(); //繪圖筆畫結束
 }
-function color1() { c.strokeStyle = "black"; }
-function color2() { c.strokeStyle = "red"; }
+function color1() { c.strokeStyle = "black"; m.style.cursor = "url(pencil.png),auto"; }
+function color2() { c.strokeStyle = "red"; m.style.cursor = "url(pencil.png),auto";}
 function color3() { c.strokeStyle = "orange"; }
 function color4() { c.strokeStyle = "yellow"; }
 function color5() { c.strokeStyle = "green"; }
