@@ -1,3 +1,42 @@
-<canvas id="draw" width="600" height="400"></canvas>
-<input type="button" value="清空" id="clear" />
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Paint</title>
+    <link rel="stylesheet" href="paint.css">
+    <script type="text/javascript" src="paint.js"></script>  
+  </head>
+
+    <body onload="init()">
+      <center>
+          <div style="width: 850px; height: 420px; text-align: center; background-color: #FFFFFF;"
+            onmousedown="md()" onmousemove="mv()" onmouseup="mup()">
+          <canvas id="m" width="850" height="420"></canvas>
+        </div>
+      </center>
+      
+      <p style="text-align: center">
+          <input id="color1" class="button " checked="checked" name="R" type="button" value="black" onclick="return color1()" />
+          <input id="color2" class="button button2" checked="" name="R" type="button" value="red" onclick="return color2()" />
+          <input id="color3" class="button button3" checked="" name="R" type="button" value="orange" onclick="return color3()" />
+          <input id="color4" class="button button4" checked="" name="R" type="button" value="yellow" onclick="return color4()" />
+          <input id="color5" class="button button5" checked="" name="R" type="button" value="green" onclick="return color5()" />
+          <input id="color6" class="button button6" checked="" name="R" type="button" value="blue" onclick="return color6()" />
+          <input id="color7" class="button button7" checked="" name="R" type="button" value="purple" onclick="return color7()" />
+          <input id="color8" class="button button8" checked="" name="R" type="button" value="brown" onclick="return color8()" />
+      </p>
+      <p style="text-align: center">粗細：
+          <input id="brush1" checked="" name="W" type="button" value="1" onclick="return brush1()" />
+          <input id="brush2" checked="" name="W" type="button" value="3" onclick="return brush2()" />
+          <input id="brush3" checked="" name="W" type="button" value="5" onclick="return brush3()" />
+          <input id="brush4" checked="" name="W" type="button" value="10" onclick="return brush4()" />
+          <input id="brush5" checked="" name="W" type="button" value="20" onclick="return brush5()" />
+      </p>
+      <p style="text-align: center">
+          <input id="Button2" type="button" value="eraser" onclick="return Button2_onclick()" />
+          <input id="Button1" type="button" value="清空畫布" onclick="return Button1_onclick()" />
+          <a href="#" download="paint.jpg" onclick="this.href=document.getElementById('m').toDataURL()">下載</a>
+          
+
+  </body>
+</html>
     
