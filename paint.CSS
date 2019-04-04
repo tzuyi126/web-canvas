@@ -21,3 +21,18 @@ body {
 .button6 {background-color: blue;}
 .button7 {background-color: purple;}
 .button8 {background-color: brown;}
+
+.redo {
+    background-image:url(/images/redo.png);
+    background-repeat:no-repeat;
+    width:30px;
+    height:30px;
+    cursor: pointer;
+}
+.undo {
+    background-image:url(/images/undo.png);
+    background-repeat:no-repeat;
+    width:30px;
+    height:30px;
+    cursor: pointer;
+}

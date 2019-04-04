@@ -27,20 +27,19 @@ function mup() {
         c.closePath();
         bef_paint.push(c.getImageData(0,0,m.width, m.height));
     }
-    save();
 }
 
 //undo redo
 function undo(){
     bef_paint.push(c.getImageData(0,0,m.width, m.height));
-    c.putImageData(af[af.length-1],0,0);
-    af.pop();
+    c.putImageData(af_paint[af_paint.length-1],0,0);
+    af_paint.pop();
     
 }
 function redo(){
-    af.push(c.getImageData(0,0,m.width, m.height));
-    c.putImageData(bef[bef.length-1], 0, 0);
-    bef.pop();
+    af_paint.push(c.getImageData(0,0,m.width, m.height));
+    c.putImageData(bef_paint[bef_paint.length-1], 0, 0);
+    bef_paint.pop();
 
 }
 
