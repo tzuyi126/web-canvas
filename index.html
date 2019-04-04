@@ -8,9 +8,9 @@
 
     <body onload="init()">
       <center>
-          <div style="width: 850px; height: 420px; text-align: center; background-color: #FFFFFF;"
+          <div style="width: 900px; height: 390px; text-align: center; background-color: #FFFFFF;"
             onmousedown="md()" onmousemove="mv()" onmouseup="mup()">
-          <canvas id="m" width="850" height="420"></canvas>
+          <canvas id="m" width="900" height="390"></canvas>
         </div>
       </center>
       
@@ -25,18 +25,29 @@
           <input id="color8" class="button button8" checked="" name="R" type="button" value="brown" onclick="return color8()" />
       </p>
       <p style="text-align: center">size：
-          <input id="brush1" checked="" name="W" type="button" value="1" onclick="return brush1()" />
-          <input id="brush2" checked="" name="W" type="button" value="3" onclick="return brush2()" />
-          <input id="brush3" checked="" name="W" type="button" value="5" onclick="return brush3()" />
-          <input id="brush4" checked="" name="W" type="button" value="10" onclick="return brush4()" />
-          <input id="brush5" checked="" name="W" type="button" value="20" onclick="return brush5()" />
+          <input id="brush1" class="btn" checked="" name="W" type="button" value="1" onclick="return brush1()" />
+          <input id="brush2" class="btn" checked="" name="W" type="button" value="3" onclick="return brush2()" />
+          <input id="brush3" class="btn" checked="" name="W" type="button" value="5" onclick="return brush3()" />
+          <input id="brush4" class="btn" checked="" name="W" type="button" value="10" onclick="return brush4()" />
+          <input id="brush5" class="btn" checked="" name="W" type="button" value="20" onclick="return brush5()" />
+          <input type="text" value="text here" id="text_data">
+			    <input type="button" id="text" value="Text Stamp" onclick="text()">
           
       </p>
       <p style="text-align: center">
-          <input id="Button2" type="button" value="eraser" onclick="return Button2_onclick()" />
-          <input id="redo" class="redo" type="button" onclick="return redo()" />
-          <input id="undo" class="undo" type="button" onclick="return undo()" />
-          <input id="Button1" type="button" value="清空畫布" onclick="return Button1_onclick()" />
+          <input id="pen" class="btn" type="button" value="pen" onclick="return pen()" />
+          <input id="eraser" class="btn" type="button" value="eraser" onclick="return eraser()" />
+          <button type="button" class="btn" onclick="rectangle()" id="rectangle"><img src="image/rectangle.png" width="20px" height="20px"></button>
+          <button type="button" class="btn" onclick="circle()" id="circle"><img src="image/circle.png" width="20px" height="20px"></button>
+          <button type="button" class="btn" onclick="triangle()" id="triangle"><img src="image/triangle.png" width="20px" height="20px"></button>
+          <button type="button" class="btn" onclick="line()" id="line"><img src="image/line.png" width="20px" height="20px"></button>
+
+          <button type="button" class="btn" onclick="undo()" id="undo"><img src="image/undo.png" width="20px" height="20px"></button>
+          <button type="button" class="btn" onclick="redo()" id="redo"><img src="image/redo.png" width="20px" height="20px"></button>
+          <input type="file" id="upload" class="file" size="20" onclick="uploading()" />
+          <input id="reset" class="btn" type="button" value="delete all" onclick="return reset()" />
+      </p>
+      <p style="text-align: center">
           <a href="#" download="paint.jpg" onclick="this.href=document.getElementById('m').toDataURL()">Download</a>
       </p>
 

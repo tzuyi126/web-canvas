@@ -1,7 +1,9 @@
 body {
-    background-color: rgb(64, 235, 141);
+    background-color: rgba(17, 37, 43, 0.664);
 }
-
+.btn{
+    cursor:pointer;
+}
 .button {
     background-color: rgb(0, 0, 0);
     border: none;
@@ -23,16 +25,16 @@ body {
 .button8 {background-color: brown;}
 
 .redo {
-    background-image:url(/images/redo.png);
+    background-image:url('image/redo.png');
     background-repeat:no-repeat;
     width:30px;
-    height:30px;
+    height:25px;
     cursor: pointer;
 }
 .undo {
-    background-image:url(/images/undo.png);
+    background-image:url('image/undo.png');
     background-repeat:no-repeat;
     width:30px;
-    height:30px;
+    height:25px;
     cursor: pointer;
 }
