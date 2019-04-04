@@ -36,6 +36,14 @@
 ---
 
 ## Put your report below here
+* 顏色選擇
+    * 八種顏色
+    * 改變 pen, rectangle, circle, triangle, line 以及 text 的顏色
+* size
+    * 五種大小
+    * 改變 pen, rectangle, circle, triangle, line 的粗細 以及 text 的大小
+* text
+    <img src="image/text.jpg" width="100px" height="50px">
 * 增加畫直線的功能鍵
 * 能決定文字放置位置
 
