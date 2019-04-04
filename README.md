@@ -36,4 +36,6 @@
 ---
 
 ## Put your report below here
+* 增加畫直線的功能鍵
+* 能決定文字放置位置
 
