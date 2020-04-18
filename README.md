@@ -1,5 +1,7 @@
 # Software Studio 2018 Spring Assignment 01 Web Canvas
 
+<img src = "canvas.jpg"></img>
+
 ## Web Canvas
 ### By 張子宜
 
