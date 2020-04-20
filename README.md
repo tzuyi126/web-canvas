@@ -1,7 +1,5 @@
 # Software Studio 2018 Spring Assignment 01 Web Canvas
 
-<img src = "canvas.jpg"></img>
-
 ## Web Canvas
 ### By 張子宜
 
@@ -34,3 +32,4 @@
 * Download
     * 下載目前作品到電腦上
 
+![image](canvas.jpg)
